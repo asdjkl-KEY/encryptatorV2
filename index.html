@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/alura.png">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+    <title>Encrypt and Decrypt text</title>
+</head>
+<body>
+    <header>
+        <img src="images/alura.png" alt="logo" id="thumbnail">
+        <h1 class="title">
+            Codifique e Decodifique seu texto.</h1>
+    </header>
+    <main>
+        <p class="main-descript">
+            Envie mensagens secretas e proteja a confidencialidade da sua informação ao se comunicar de forma segura.
+        </p>
+    </main>
+    <div class="root">
+        <div class="contain-form">
+            <form>
+                <div class="form-group">
+                    <label for="texto">Texto:</label>
+                    <textarea name="texto" id="texto" class="input" placeholder="Escreva seu texto aqui..."></textarea>
+                </div>
+                <div class="form-group buttons">
+                    <button type="button" id="codificar" class="btn">Encriptar</button>
+                    <button type="button" id="decodificar" class="btn">Desencriptar</button>
+                </div>
+            </form>
+            <aside>
+                <textarea class="input" id="code" placeholder="O texto encriptado/desencriptado sera exibido aqui"></textarea>
+                <button type="button" class="btn" id="copy" onclick="copyToClipboard()">Copiar</button>
+            </aside>
+        </div>
+    </div>
+    <footer>
+        <span class="footer-text">Site Criado por <b class="bold">Isaí Gabriel Medina Pereira</b></span>
+        <hr id="divise">
+        <small class="footer-text">CopyRight &copy; <b id="year"></b></small>
+    </footer>
+    
+    <script src="js/scripts.js"></script>
+</body>
+</html>

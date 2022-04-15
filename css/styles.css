@@ -1,0 +1,154 @@
+* {
+    font-family: 'Comfortaa', cursive;
+}
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    background: #e8e8e8;
+    padding: 12px;
+    position: relative;
+}
+#thumbnail {
+    width: 80px;
+    height: auto;
+    position: absolute;
+    float: inline-start;
+}
+.title {
+    height: 100%;
+    text-align: center;
+}
+main {
+    padding: 48px;
+    width: 40%;
+}
+main > p {
+    width: 100%;
+}
+.contain-form {
+    padding: 48px;
+    display: grid;
+    grid-template-columns: 70% 1fr;
+    gap: 16px;
+    background: #a1f2fc;
+}
+form {
+    background: #dcf8fe;
+    border-radius: 12px;
+    padding: 24px;
+}
+.form-group {
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+}
+.form-group label {
+    margin: 24px 8px;
+}
+.input {
+    outline-color: transparent;
+    border: 1px solid #aeffff;
+    resize: none;
+    background: #f1ffff;
+    border-radius: 8px;
+    padding: 12px;
+}
+.input:focus-visible {
+    box-shadow:0 0 16px #02eeff;
+    -moz-box-shadow:0 0 16px #02eeff;
+    -webkit-box-shadow:0 0 16px #02eeff;
+}
+#texto {
+    height: 300px;
+    margin-bottom: 24px;
+}
+aside {
+    background: #dcf8fe;
+    padding: 12px;
+    border-radius: 12px;
+}
+#code {
+    height: 80%;
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 24px;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+}
+.btn {
+    padding: 12px;
+    border-radius: 8px;
+    background: #dffdff;
+    border: solid 1px #a1f2fc;
+    box-shadow:0 0 16px #02eeff;
+    -moz-box-shadow:0 0 16px #02eeff;
+    -webkit-box-shadow:0 0 16px #02eeff;
+}
+.btn:hover {
+    background: #67eff8;
+}
+#copy {
+    width: 70%;
+    margin-top: 12px;
+    margin-left: 15%;
+}
+footer {
+    background-color: #5798fa;
+}
+.footer-text {
+    display: block;
+    text-align: center;
+    padding: 12px;
+}
+hr {
+    display: block;
+    width: 80%;
+    margin-left: 10%;
+    border: #defafc 1px solid;
+}
+@media only screen and (max-width: 991px) {
+    main {
+        width: 100%;
+        margin: 0;
+        padding: 24px;
+    }
+    main > p {
+        width: auto;
+        padding: 16px;
+    }
+    .contain-form {
+        display: flex;
+        flex-direction: column;
+    }
+    #code {
+        height: 250px;
+    }
+    h1 {
+        font-size: 1em;
+    }
+    #thumbnail {
+        width: 35px;
+    }
+    .buttons {
+        display: grid;
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        gap: 16px;
+    }
+    #codificar {
+        left: 5%;
+    }
+    #decodificar {
+        right: 5%;
+    }
+    #copy {
+        position: relative;
+    }
+}
