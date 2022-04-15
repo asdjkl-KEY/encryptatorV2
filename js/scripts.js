@@ -1,18 +1,9 @@
 function encrypt(string){
         
     function returnCrypt(letter) {
-        let dic = {
-            a: "ai",
-            e: "enter",
-            i: "imes",
-            o: "ober",
-            u: "ufat"
-        }
-        let result = letter;
-        if(letter == 'a' || letter === 'e' || letter === 'i' || letter === 'o' || letter ===  'u') {
-            result = dic[letter];
-        }
-        return result;
+            
+        letter = dic_encrypt[letter];
+        return letter;
     }
     let text = [];
     let content = "";
@@ -25,19 +16,10 @@ function encrypt(string){
     return content;
 }
 function decrypt(string) {
-    let dic = {
-        ai: "a",
-        enter: "e",
-        imes: "i",
-        ober: "o",
-        ufat: "u"
-    }
-    let list = ['ai', 'enter', 'imes', 'ober', 'ufat'];
     for(a = 0; a < (string.length/2); a++){
-        for (i of list) {
+        for (i of dic_decrypt) {
             if(string.includes(i)) {
-                let exp = new RegExp(i, 'i');
-                string = string.replace(i, dic[i]);
+                string = string.replace(i, dic_decrypt2[i]);
             }
         }
     }
