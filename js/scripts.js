@@ -1,7 +1,9 @@
 function encrypt(string){
         
     function returnCrypt(letter) {
-            
+        if(dic_encrypt[letter] == undefined) {
+            dic_encrypt[letter] = letter
+        }
         letter = dic_encrypt[letter];
         return letter;
     }
